@@ -8,18 +8,17 @@
  */
 int check_cycle(listint_t *list)
 {
-	int n_cycles = 0;
 	listint_t *temp_list = list;
+	
+	if (list == NULL)
+		return (0);
 
 	while (temp_list != NULL)
 	{
 		temp_list = temp_list->next;
 		if (list == temp_list)
-		{
-			n_cycles++;
-			break;
-		}
+			return (1);
 	}
 
-	return (n_cycles);
+	return (0);
 }
