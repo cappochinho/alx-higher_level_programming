@@ -9,12 +9,13 @@
 int check_cycle(listint_t *list)
 {
 	int n_cycles = 0;
+	listint_t *temp = list;
 	listint_t *temp_list = list;
 
 	while (temp_list != NULL)
 	{
 		temp_list = temp_list->next;
-		if (list == temp_list)
+		if (temp == temp_list)
 		{
 			n_cycles = 1;
 			break;
