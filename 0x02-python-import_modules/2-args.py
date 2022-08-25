@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    import sys as s
-    l = len(s.argv) - 1
+    from sys import argv
+    l = len(argv) - 1
     if l == 1:
         print("{:d} argument:".format(l))
-        print("{:d}: {:s}".format(l, s.argv[l]))
+        print("{:d}: {:s}".format(l, argv[l]))
     else:
         if l == 0:
             print("{:d} arguments.".format(l))
@@ -13,5 +13,5 @@ if __name__ == "__main__":
             print("{:d} arguments:".format(l))
             i = 1
             while (i <= l):
-                print("{:d}: {:s}".format(i, s.argv[i]))
+                print("{:d}: {:s}".format(i, argv[i]))
                 i += 1
