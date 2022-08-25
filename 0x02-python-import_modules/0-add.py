@@ -2,6 +2,6 @@
 
 from add_0 import add
 
-a = 1
-b = 2
+a = int(input())
+b = int(input())
 print(f"{a} + {b} = {add(a, b)}")
