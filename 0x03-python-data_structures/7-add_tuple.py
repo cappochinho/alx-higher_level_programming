@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def add_tuple(tuple_a=(), tuple_b=()):
     """Adds elements of two tuples symmetrically"""
     if len(tuple_a) < 1:
