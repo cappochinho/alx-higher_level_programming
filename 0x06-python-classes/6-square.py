@@ -22,20 +22,24 @@ class Square:
             self.__size = value
             
     def my_print(self):
+        """prints square using #"""
         s = self.__size
         if s == 0:
             print()
         else:
-            i, j = 1, 1
-            while i <= s:
-                while j <= s:
-                    print("#", end="")
-                    j += 1
+            i, j = 0, 0
+            for i in range(self.__position[1]):
                 print()
-                i += 1
+            for j in range(s):
+                print("{}{}".format(" " * self.__position[0], "#" * s))
                 
     def position(self):
         return self.__position
     
     def position(self, value):
+        if value[0] < 0 | value[1] < 0:
+            raise TypeError("position must a tuple of 2 positive integers")
+        else:
+            self.__position = value
+
         
