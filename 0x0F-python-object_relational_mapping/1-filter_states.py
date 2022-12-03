@@ -8,8 +8,8 @@ import MySQLdb
 
 if __name__ == "__main__":
 
-    list = sys.argv
-    username, password, database = (list[1], list[2], list[3])
+    list_arg = sys.argv
+    username, password, database = (list_arg[1], list_arg[2], list_arg[3])
     connection = MySQLdb.connect(host = "localhost",
             port=3306,
             user=username,
