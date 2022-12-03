@@ -18,5 +18,5 @@ if __name__ == "__main__":
             db=database)
 
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM `states` ORDER BY `id` ASC")
-    [print(state) for state in cursor.fetchall() if state[1] == list[4]]
+    cursor.execute("SELECT * FROM `states` WHERE BINARY `name` = '{}'".format(list[4])) ORDER BY `id` ASC")
+    [print(state) for state in cursor.fetchall()]
