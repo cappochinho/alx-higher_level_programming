@@ -4,13 +4,13 @@
 #                             <mysql password> \
 #                             <database name>
 import sys
-import MySQLdb
+import MySQLdb as db
 
 if __name__ == "__main__":
 
     list = sys.argv
     username, password, database = (list[1], list[2], list[3])
-    connection = MySQLdb.connect(host = "localhost",
+    connection = db.connect(host = "localhost",
             port=3306,
             user=username,
             passwd=password,
