@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
   Lists all the values in the states table of hbtn_0e_0_usa if name matches the argument
-  Usage: ./1-filter_states.py <mysql username> \
+  Usage: ./2-my_filter_states.py <mysql username> \
                               <mysql password> \
                               <database name>  \
                               <state name searched>
