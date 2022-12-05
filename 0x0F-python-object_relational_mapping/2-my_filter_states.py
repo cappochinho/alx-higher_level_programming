@@ -5,6 +5,7 @@ Usage: ./1-filter_states.py <mysql username> \
                             <mysql password> \
                             <database name>  \
                             <state name searched>
+"""
 import sys
 import MySQLdb
 
