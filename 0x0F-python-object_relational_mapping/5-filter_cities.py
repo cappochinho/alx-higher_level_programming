@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-# Takes the name of a state as an argument and \
-# lists all the cities of that state
-# Usage: ./5-filter_cities.py <mysql username> \
-#                             <mysql password> \
-#                             <database name> \
-#                             <state name>
+"""
+Takes the name of a state as an argument and \
+lists all the cities of that state
+Usage: ./5-filter_cities.py <mysql username> \
+                            <mysql password> \
+                            <database name> \
+                            <state name>
+"""
 
 import MySQLdb
 import sys
