@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
     Contains the class definition of a "State" and an instance Base = declarative_base()
+    Models the state object in a MySQL database.
 """
 
 from sqlalchemy import Column, Integer, String
